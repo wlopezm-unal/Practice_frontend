@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: lobster;
+    src: url('../fonts/Lobster-Regular.ttf');
+}
+
+@font-face{
+    font-family: dancing;
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face{
+    font-family: indie;
+    src: url('../fonts/IndieFlower-Regular.ttf');
+}
+
+html {
+	
+	height: 100%;
+    /*para que la pagina ocupe toda la pantalla*/}
+body {
+    background: url('../img/fondo.jpg');
+    background-size: cover;  /*para que la imagen ocupe todo el tamaño de la pagina*/
+    background-position: center;
+    font-family: cursive;
+    font-size: small;
+    /*size, para darle un tamaño de texto*/
+    margin: 0;
+    /* para que el margen de todo body sea cero*/
+    text-align: justify;
+	/*para ajustar el texto dentro del body*/
+	text-justify: inter-word;
+	font-size: 20px;
+    /*para que el tamaño de la imagen ocupe toda la pantalla*/
+    min-height: 100%;
+    
+}
+
+a {
+    text-decoration: double;
+    /*decoratin es para que indicar el tipo de decoración de esta etiqueta*/
+}
+
+
+header {
+    display: flex;
+    /*flex, para que el header quede en la izquierdq*/
+    justify-content: space-between;
+    /*justify-content es para ubicar los elementos en el eje principal*/
+    /*between es para que cada div este en una esquina*/
+    ;
+    background-color: rgb(179, 231, 100);
+    /*para colocarle una franja de color verde amarillo*/
+    align-items: center;
+    /*aling-items es para indicar en que parte de la zona vertical se quedara el texto*/
+    padding: 10px;
+    min-height: 70px;
+}
+
+header label {
+    display: none;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+}
+
+header label:hover { 
+    cursor: pointer;/*colocarle un cambio de cursor al label*/
+    background: rgba(0, 0, 0, 3);
+} 
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px; /* para colocar padding en la derecha*/
+    cursor: pointer; /*para cambiar el tipo de cursor*/
+}
+
+nav a:hover{
+    color: rgb(243, 9, 9);
+    /*para que cuando uno pase por el cursor se ponga de color azul*/
+}
+
+nav a:active{
+    color: antiquewhite; /*para colocar de color cuando se quede el cursor en un link */
+}
+
+span {
+    color:rgb(231, 8, 8)
+    /*para que las palabras demarcadas sean de color rojo*/
+}
+
+
+figure {
+    position: relative;
+	text-align: center; /*centrar las imagenes*/
+	margin: 10px;
+	max-width: 1100px;
+    font-size: 25px;
+    font-family: dancing;}
+
+
+footer{
+    color: rgb(253, 253, 253);
+	width: 100%;
+	vertical-align: center;
+	background-color: rgb(0,0,0,0.5);
+	position: scroll;
+	padding-left: 10px;
+	bottom: 0;
+	font-size: 16px;
+    margin: 0;
+}
+
+#btn-menu{
+    display: none
+    /*para que la lista de opciones no tenga un display, desaparecer el btn-menu*/;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: indie;
+    font-size: 40px;
+    font-style: unset;
+    color: rgb(8, 8, 8);
+}
+
+.inicio {
+    text-align: center;
+    font-family: dacing;
+    font-size: 30px;
+}
+.menu ul{
+    /*para darle las caracteristicas del menu de opciones*/
+    margin: 0;
+    list-style: none; /*quitarle los puntos de lalista no ordenada*/
+    padding: 0;
+    display: flex; /*sean cajas flexibles y los coloque una fila*/
+    
+}
+
+.menu li {
+    flex-grow: 1; /*definir la proporción de crecimiento*/
+}
+.subtitulo {
+    font-family: lobster;
+    text-align: center; /*para colocar los titulos centrados*/
+    padding: 1px;
+}
+.encabezado {
+    font-family: dancing; /*ponerle tipo de letra al header*/
+}
+.texto {
+    margin: 10px;
+    /*colocarle margen a la etiqueta <p>*/
+    padding: 2px;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* para centrar tanto el logo como el texto*/
+    padding: 5px;
+    
+}
+.logo img {
+    height: 50px;
+    margin-right: 5px;
+    /*crear una margen para separar el logo de el texto*/
+}
+
+.link {
+    align-items: inherit;
+}
+
+/*padding para separar los elementos*/
+
+.lugar{
+    text-align: center; /*para centrar los listados*/
+    
+}
+
+.lugar li{list-style: none;} /*para eliminar los estilos de la lista*/
+
+.casilla{
+    /*para que en las referencias, haya una separación entre las casillas de las listas*/
+    padding: 10px;
+    justify-content: space-between;
+}
+.casilla td {
+    padding: 15px; /* para ayudar a separar la información de las columnas de los creditos*/
+}
+
+.casilla a {
+    text-decoration: underline;
+    text-decoration-color: rgb(1, 44, 44);
+    padding: 5px;
+}
+
+.figura {text-align: center;}
+    /*para darle forma a las imagenes de la descripción de los personajes*/
+
+.figura img {
+    width: 80%;
+    /*para que las imagenes se ajusten al 80% cuando cambie la resolución de la pantalla*/    
+}
+
+.mapa_interactivo {
+    position: relative;
+    border: 7px;
+    width: 100%;
+    display: block;
+}
+
+.mapa {
+	width: 87%;
+	display: block;
+	margin: auto;
+    
+}
+.fondo{
+    
+	display: block;
+	margin: auto;
+}
+    
+/* sección para los id de los mapas usando js*/
+.icono {
+    /*configurar como los iconos para el signo interactivo tenga los ajustes estandar*/
+    display: block; 
+    width: 100%;
+    margin: auto; 
+}
+
+.lugar1 {
+    position: absolute;
+    z-index: 2;
+    width: 3%;
+    bottom: 50%;
+    left: 33%;
+}
+.lugar1 img{
+    width: 7%;
+}
+
+.lugar2 {
+    position: absolute;
+    z-index: 2;
+    width: 3%;
+    bottom: 30%;
+    left: 15%;
+}
+
+.lugar3 {
+    position: absolute;
+    z-index: 2;
+    width: 3%;
+    bottom: 75%;
+    left: 47%;
+}
+
+.lugar4 {
+    position: absolute;
+    z-index: 2;
+    width: 3%;
+    bottom: 83%;
+    left: 17%;
+}
+
+.lugar5 {
+    position: absolute;
+    z-index: 2;
+    width: 3%;
+    bottom: 48%;
+    left: 55%;
+}
+
+.Img {
+	max-width: 3%;
+	float:right;
+	margin:1%;
+    padding: 3%;
+}
+
+.m_sec{
+    font-size: 26px;
+	
+	
+	width: 90%;
+    margin: auto;
+	padding: 1%;
+	display:block;
+}
+
+/*sección para el spocig */
+@media only screen and (max-width: 1200px)  {
+    /*para hacer un encabezado responsivo*/
+    header {flex-direction: column;}
+        /* column es para que los elementos aparezcan en columna*/
+    
+    nav {padding: 10px 0;}
+
+    .logo {
+        font-size: 18px; /*para disminuir  la letra del encabezado*/
+    }    
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    header {
+        flex-direction: block;
+        /* column es para que los elementos aparezcan en columna*/
+        justify-content: space-between;
+        width: 100%;}
+
+    header label {
+        display: block; /*para que salga el menu en forma de bloques*/
+        
+    }
+    .menu {
+        position: absolute;
+        background: rgb(179, 248, 74) ;
+        margin-left: -90%; /*correr la margen y asi desaparacer las opciones del menu*/
+        transition: all 0.5s; /*para que haya una transición en el menu de unos pocos segundos*/
+        padding: 1px;
+        
+    }
+
+    .menu li a{
+        /*crear cajas que demarquen las opciones del menu al desplegarse con bordes de colro blanco*/
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #fff;
+
+    }
+    .logo{
+        font-size: 15px; /*disminuir el tamaño de texto cuando baje la resoluciónd de la pantalla*/}
+    .nombre-titular {
+        margin:0;
+        padding: 10px;
+    }
+
+    nav {padding: 10px 0;}
+    .menu ul {flex-direction: column;    /*volver las opciones a columna*/}
+
+    #btn-menu:checked ~ .menu {
+        /*para cuando se apriete el icono de menu, desplegue las opciones de menu*/
+        margin: 0;
+    }
+}

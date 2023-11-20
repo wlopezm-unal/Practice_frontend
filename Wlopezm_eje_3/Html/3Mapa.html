@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../logo 2.jpg"> <!-- Icono para el motor de busqueda-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--diseño responsive-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="../js/mapa.js"></script>
+
+    <title>Mapa</title>
+</head>
+<body>
+    <header class="encabezado">
+        <!--encabezado, para que el header no solo tenga un menu, sino ademas nombre y logo -->
+        <a href="https://www.nintendo.com/es_LA/games/detail/the-legend-of-zelda-breath-of-the-wild-switch/" target="_blank" class="logo">
+            <!--a.logo es una ruta para crear un div ya definiendo una clase dentro -> logo-->
+            <img src="../img/logo_breath.jpg" alt="imagen de zelda">
+            <h2 class="nombre-titular">Legend of Zelda- Breath of the Wild- Región de Hyrule</h2>
+        </a>
+        <div>
+            <!--encasillar la imagen del menu con la lista no ordenadas de las opciones para un RWD-->
+            <input type="checkbox" id="btn-menu"> 
+            <!--checkbox para crear una casilla que se pueda marcar-->
+            <label for="btn-menu"><img src="../img/menu.png" alt=""  width="25px"></label>
+
+            <nav class="menu">
+                <!--crear el menu de navegación interactivo-->
+                <ul>
+                    <li><a href="../Html/1inicio.html" class="nav-link" target="_self">Inicio</a></li>
+                    <li><a href="../Html/2Historia.html" class="nav-link" target="_self">Historia</a></li>
+                    <li><a href="../Html/3Mapa.html" class="nav-link" target="_self">Mapa</a></li>
+                    <li><a href="../Html/4personajes.html" class="nav-link" target="_self">Personajes</a></li>
+                    <li><a href="../Html/5Creditos.html" class="nav-link" target="_self">Creditos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h2 class="subtitulo">MAPA</h2>
+
+    
+                
+<div class="mapa_interactivo">
+    <!--mapa interactivo, cargar imagenes-->
+    <img id="fondo" class="mapa" src="../img/reino de hyrulen.jpeg" alt="Reino de Hyrule" width="95%">
+    <a href="#info" target="_self" > <img class="lugar1" onclick="lugar1()"  src="../img/logo 2.jpg" alt="lugar uno" > </a> <!-- zona  de Hyrule central -->
+    <a href="#info" target="_self" > <img class="lugar2" onclick="lugar2()"  src="../img/logo 2.jpg" alt="lugar dos" > </a> <!-- zona del desierto, gerudo-->
+    <a href="#info" target="_self" > <img class="lugar3" onclick="lugar3()"  src="../img/logo 2.jpg" alt="lugar tres" > </a>  <!-- zona volcanica, Eldim-->          
+    <a href="#info" target="_self" > <img class="lugar4" onclick="lugar4()"  src="../img/logo 2.jpg" alt="lugar cuatro" ></a> <!--zona de hieloHebra-->
+    <a href="#info" target="_self" > <img class="lugar5" onclick="lugar5()"  src="../img/logo 2.jpg" alt="lugar cinco" > </a>  <!--Zona oriental-->
+</div> 
+<div class="mapa_interactivo">
+    <p id="info" class="m_sec"><img class="Igm" src="../img/logo.png" alt="Punto_informacion" width="10%"> <br><br>
+        <strong>Mapa interactivo del Mundo de Breath of the Wild</strong><br><br>
+        Haz click en alguno de los simbolos que marcan en el mapa para conocer más información sobre los lugares del mundo de Hyrule </p>    
+        <a target="_blank"  href="https://br.atsit.in/es/?p=29567" >Derechos del mapa de Hyrulen</a>
+        <!--target="_blank" hace que se abra desde otra pestaña --> 
+    </div>  
+ 
+    <footer>
+        <p>Estudiante: Wilber Lopez Murcia- Universidad Nacional de Colombia</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- para que ocupe la ventana del dispositivo al 100% al inicio -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>inicio</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <!--encabezado, para que el header no solo tenga un menu, sino ademas nombre y logo -->
+        <a href="https://www.nintendo.com/es_LA/games/detail/the-legend-of-zelda-breath-of-the-wild-switch/" target="_blank" class="logo">
+            <!--a.logo es una ruta para crear un div ya definiendo una clase dentro -> logo-->
+            <img src="../img/logo_breath.jpg" alt="imagen de zelda">
+            <h2 class="nombre-titular">Legend of Zelda- Breath of the Wild- Región de Hyrule</h2>
+        </a>
+        <div>
+            <!--encasillar la imagen del menu con la lista no ordenadas de las opciones para un RWD-->
+            <input type="checkbox" id="btn-menu"> 
+            <!--checkbox para crear una casilla que se pueda marcar-->
+            <label for="btn-menu"><img src="../img/menu.png" alt=""  width="25px"></label>
+
+            <nav class="menu">
+                <!--crear el menu de navegación-->
+                <ul>
+                    <li><a href="../Html/1inicio.html" class="nav-link" target="_self">Inicio</a></li>
+                    <li><a href="../Html/2Historia.html" class="nav-link" target="_self">Historia</a></li>
+                    <li><a href="../Html/3Mapa.html" class="nav-link" target="_self">Mapa</a></li>
+                    <li><a href="../Html/4personajes.html" class="nav-link" target="_self">Personajes</a></li>
+                    <li><a href="../Html/5Creditos.html" class="nav-link" target="_self">Creditos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h2 class="subtitulo">INICIO</h2>
+
+    <section class="texto">
+
+        <article >
+            <p>
+                Hyrulen es un extenso lugar que esta dividido por varias provincias. Podemos encontrar también diferentes razas que habitan Hyrulen y que le guardan lealtad a la familia real de Hyrulen.
+                Cada raza tiene su propio gobierno local. En este lugar ocurriran todos los eventos de Breath of the Wild.
+                Dentro de Hyrulen, podemos encontrar sitios de nieve absoluto, desiertos, zonas volcanicas, zonas tropicales;
+                cada zona ofrece una aventura diferente debido a la variedad de sus climas.
+            </p>
+            <P> El heroe <a href="https://zelda.fandom.com/es/wiki/Link#The_Legend_of_Zelda:_Breath_of_the_Wild" target="_blank"> Link</a> tendra que recorrer este basto mundo, interactuar con todas las razas que le ayudaran en su cometido de poder vencer
+            a <a href="https://zelda.fandom.com/es/wiki/Ganon#The_Legend_of_Zelda:_Breath_of_the_Wild" target="_blank">Ganon</a>. luego de que estuviera en un profundo sueño luego de ser derrotado por Ganon 100 años atras.
+            En cada región, Link tendra que combatir con mounstros únicos para poder llegar contra Ganon y asi poder vencerlo, y ayudar a la princesa 
+            <a href="https://zelda.fandom.com/es/wiki/Princesa_Zelda#The_Legend_of_Zelda:_Breath_of_the_Wild" target="_blank">Zelda</a> que lleva conteniendolo todo este tiempo. 
+            </P>
+        <!--Span es para poder resaltar una frase o palabra-->
+        </article>
+
+        <article class="figura">
+            <figure>
+                <img src="../img/lucha.jpg" alt="surgimiento de Ganon" title="Link, Zelda y los campeones">
+                <figcaption>Lucha campeones, Link y Zelda ante el evento del cataclismo</figcaption>
+            </figure>
+            
+
+        </article>
+
+    </section>
+    <footer>
+        <p>Estudiante: Wilber Lopez Murcia- Universidad Nacional de Colombia</p>
+    </footer>
+    
+</body>
+</html>

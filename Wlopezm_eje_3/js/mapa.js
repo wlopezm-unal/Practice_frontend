@@ -1,0 +1,22 @@
+//Archivo script para el mapa interactivo.
+//Función que cambiara la Informacion teniendo en cuenta la ubicacion solicitada sobre el primer Lugar.
+function lugar1() {
+	document.getElementById("info").innerHTML = '<img class="Igm" src="../img/ciudadela_hyrule.jpg" width=30% alt="Lugar uno"><br><span>Central Hyrule</span><br><br> Es el foco principal y el centro de la actividad en Hyrule, que se encuentra en la misma zona que el Castillo de Hyrule. Por lo general se presenta como una metrópoli llena de vida donde los Hylianos se dedican a diferentes negocios y comercios y, por lo tanto, se considera como una de las ciudades más animadas de Hyrule. <br>Es la región más extensa de las 8 que componen al reino y está conformada por las subregiones de: Colinas de Hyrule, Llanuras de Hyrule, Gran Bosque de Hyrule, Meseta de los albores y el Lago Hylia. También contiene 4 torres que subdividen el mapa en 4 zonas, estas son la torre de la llanura, la torre del bosque, la torre de las colinas y la torre de la meseta.</br> <br>Acá luchamos en la parte final contra el villano de turno </br>';
+	document.getElementById("Info").scrollIntoView();
+}
+function lugar2() {
+	document.getElementById("info").innerHTML = '<img class="Igm" src="../img/desierto_gerudo.jpg"  width=30% alt="Lugar dos"><br><span>Desierto de Gerudo</span><br><br>El Desierto de Gerudo una vez tuvo una cárcel construida para albergar a los peores criminales que este país haya conocido... Los delincuentes que fueron condenados a muerte fueron enviados directamente al infierno por un espejo maldito que se mantuvo en la cárcel <br>Acá podemos encontrar a una de las bestias divinas, encontramos uno de los tesoros de la tribu gerudo, y encontramos el espirito de la heronina Urbosa y  a la heroina Riju</br>';
+	document.getElementById("Info").scrollIntoView();
+}
+function lugar3() {
+	document.getElementById("info").innerHTML = '<img class="Igm" src="../img/ciudad_goron.jpg" width=30% alt="Lugar tres"><br><span>Región de Eldin</span><br><br>Eldin es una vasta región dividida en dos mitades distintas. El lado oriental es un pedazo de tierra montañoso que consiste en gran parte de colinas, con mucha actividad volcánica. Consta de dos áreas: El Cañón de Eldin y la Montaña de la Muerte. El lado occidental es una región mayormente boscosa que constituye el Gran Bosque de Hyrule, que también forma parte de Eldin. Las Montañas de Eldin se encuentran al norte del Bosque. El cañón de Eldin es el más grande de todas estas áreas, cubriendo casi la totalidad de Eldin del sur y del este. <br>Podemos encontrar una de las bestias divinas, El espiritu del heroe Daruk y al Heroe Yunobo</br>';
+	document.getElementById("Info").scrollIntoView();
+}
+function lugar4() {
+	document.getElementById("info").innerHTML = '<img class="Igm" src="../img/hebra.jpg" width=30% alt="Lugar cuatro"><br><span>Región de Hebra</span><br><br>Hebra es una región nevada, y cuenta con un gran sistema montañoso: la Cordillera de Hebra, que cuenta con varias montañas como el Macizo Norte de Hebra. También como buen sitio nevado cuenta con varias estepas, destaca la Gran Estepa de Tabanta, donde se encuentra la Posta de Tabanta. La red hidrográfica allí es escasa, no obstante, cuenta con un río, un manantial y un lago. <br> Los únicos habitantes 100% autóctonos de Hebra son los Orni, que se establecieron en el lago Ornitón. Allí construyeron el Poblado Orni, y eligieron a un patriarca, Tyto. También se hicieron cargo de la Bestia Divina Vah Medoh, cuyo elegido encargado de controlarla fue Revali.</br>';
+	document.getElementById("Info").scrollIntoView();
+}
+function lugar5() {
+	document.getElementById("info").innerHTML = '<img class="Igm" src="../img/zora.jpg" width=30% alt="Lugar cinco"><br><span>Región de Necluda</span><br><br>Se divide en dos regiones: Necluda occidental y Necluda oriental, divididas por la muralla de Hatelia. Se trata de una zona predominantemente montañosa, destacando el monte Ebon, los picos gemelos al oeste, y el monte Lanayru en el lado oriental. Ambas elevaciones dan cobijo a las dos poblaciones hylianas supervivientes al cataclismo: Kakariko y Hatelia, respectivamente, además cuenta con una posta en la zona de los picos gemelos. <br> Podemos encontrar al lado la ciudadela de los Zoras, donde podemos encontrar la ultima bestia divina y a dos heroes </br> ' ;
+	document.getElementById("Info").scrollIntoView();
+}
